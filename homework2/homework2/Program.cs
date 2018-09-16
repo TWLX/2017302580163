@@ -29,6 +29,7 @@ namespace homework2
         void MyPrimeFactor(int n)
         {
             Console.WriteLine("prime factors：");
+            
             while (n % 2 == 0)
             {
                 Console.WriteLine("2 ");
@@ -65,13 +66,14 @@ namespace homework2
 
         void AS()
         {
+            Console.Write(2 + "");
             for (int i = 3; i < 100; i+=2)
             {
                 int n = 0;
                 for (int j = 3; j <= Math.Sqrt(100); j++)
                 {
 
-                    if (i % j == 0)
+                    if (i % j == 0 && i != j)
                     {
                         goto outer;
                     }
