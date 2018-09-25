@@ -18,8 +18,9 @@ namespace homework3
         public void Area()
         {
             int p = (a + b + c) / 2;
-            double s = p * (p - a) * (p - b) * (p - c);
-            Console.WriteLine("三角形面积的平方为:" +s);
+            double ss = p * (p - a) * (p - b) * (p - c);
+            double s = Math.Sqrt(ss); 
+            Console.WriteLine("三角形面积为:" +s);
         }
 
         public Triangle(int a,int b,int c)
