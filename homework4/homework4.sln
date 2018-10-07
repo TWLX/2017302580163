@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework4", "homework4\homework4.csproj", "{DA43CB3C-7EFA-4E8E-984F-BBADE5F10502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clock", "clock\clock.csproj", "{01CEB390-8921-4850-88E4-F40712E04AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newClock", "newClock\newClock.csproj", "{B7EF84A7-F5E1-4294-BAB7-962B5DBB7167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA43CB3C-7EFA-4E8E-984F-BBADE5F10502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA43CB3C-7EFA-4E8E-984F-BBADE5F10502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA43CB3C-7EFA-4E8E-984F-BBADE5F10502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA43CB3C-7EFA-4E8E-984F-BBADE5F10502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CEB390-8921-4850-88E4-F40712E04AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CEB390-8921-4850-88E4-F40712E04AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CEB390-8921-4850-88E4-F40712E04AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CEB390-8921-4850-88E4-F40712E04AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7EF84A7-F5E1-4294-BAB7-962B5DBB7167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7EF84A7-F5E1-4294-BAB7-962B5DBB7167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7EF84A7-F5E1-4294-BAB7-962B5DBB7167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7EF84A7-F5E1-4294-BAB7-962B5DBB7167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {830697B5-D425-4E92-97CE-4CF37B832399}
+	EndGlobalSection
+EndGlobal
