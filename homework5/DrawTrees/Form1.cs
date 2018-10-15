@@ -51,18 +51,16 @@ namespace DrawTrees
         }
 
 
-        string c;
+        
         void drawLine(double x0, double y0, double x1, double y1)
         {
-            if(textBox1.Text != null)
-                c = textBox1.Text;
+            string c = listBox1.Text;
             Color color = Color.FromName(c);
             Pen pen = new Pen(color);
             graphics.DrawLine(
             pen,
             (int)x0, (int)y0, (int)x1, (int)y1);
         }
-
 
     }
 }
