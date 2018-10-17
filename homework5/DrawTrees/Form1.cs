@@ -16,15 +16,9 @@ namespace DrawTrees
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (graphics == null) graphics = this.CreateGraphics();
-            drawCayleyTree(10, 250, 410, 100, -Math.PI / 2);
-        }
+        public Graphics graphics;
 
-        private Graphics graphics;
-
-        void drawCayleyTree(int n, double x0, double y0, double leng, double th)
+        public void drawCayleyTree(int n, double x0, double y0, double leng, double th)
         {
             double num1 = Convert.ToDouble(angle1.Text);
             double th1 = num1 * Math.PI / 180;
@@ -32,9 +26,8 @@ namespace DrawTrees
             double th2 = num2 * Math.PI / 180;
             double per1 = Convert.ToDouble(length1.Text);
             double per2 = Convert.ToDouble(length2.Text);
-
-
             double k = Convert.ToDouble(length2.Text);
+
             if (n == 0) return;
 
             double x1 = x0 + leng * Math.Cos(th);
@@ -50,9 +43,7 @@ namespace DrawTrees
 
         }
 
-
-        
-        void drawLine(double x0, double y0, double x1, double y1)
+        public void drawLine(double x0, double y0, double x1, double y1)
         {
             string c = listBox1.Text;
             Color color = Color.FromName(c);
@@ -62,5 +53,17 @@ namespace DrawTrees
             (int)x0, (int)y0, (int)x1, (int)y1);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (graphics == null) graphics = this.CreateGraphics();
+            drawCayleyTree(10, 250, 410, 100, -Math.PI / 2);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Color color = Color.White;
+            graphics.Clear(color);
+        }
     }
 }

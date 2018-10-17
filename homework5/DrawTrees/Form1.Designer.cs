@@ -44,7 +44,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(511, 26);
+            this.button1.Location = new System.Drawing.Point(490, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 30);
             this.button1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(508, 80);
+            this.label1.Location = new System.Drawing.Point(522, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 15);
             this.label1.TabIndex = 1;
@@ -63,16 +63,16 @@
             // 
             // angle1
             // 
-            this.angle1.Location = new System.Drawing.Point(567, 77);
+            this.angle1.Location = new System.Drawing.Point(593, 77);
             this.angle1.Name = "angle1";
             this.angle1.Size = new System.Drawing.Size(100, 25);
             this.angle1.TabIndex = 2;
-            this.angle1.Text = "30";
+            this.angle1.Text = "30\r\n";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(508, 124);
+            this.label2.Location = new System.Drawing.Point(522, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 15);
             this.label2.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             // angle2
             // 
-            this.angle2.Location = new System.Drawing.Point(567, 121);
+            this.angle2.Location = new System.Drawing.Point(593, 121);
             this.angle2.Name = "angle2";
             this.angle2.Size = new System.Drawing.Size(100, 25);
             this.angle2.TabIndex = 4;
@@ -89,7 +89,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(508, 166);
+            this.label3.Location = new System.Drawing.Point(522, 173);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 15);
             this.label3.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             // length1
             // 
-            this.length1.Location = new System.Drawing.Point(567, 163);
+            this.length1.Location = new System.Drawing.Point(593, 170);
             this.length1.Name = "length1";
             this.length1.Size = new System.Drawing.Size(100, 25);
             this.length1.TabIndex = 6;
@@ -106,7 +106,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(508, 208);
+            this.label4.Location = new System.Drawing.Point(522, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 15);
             this.label4.TabIndex = 7;
@@ -114,7 +114,7 @@
             // 
             // length2
             // 
-            this.length2.Location = new System.Drawing.Point(567, 205);
+            this.length2.Location = new System.Drawing.Point(593, 212);
             this.length2.Name = "length2";
             this.length2.Size = new System.Drawing.Size(100, 25);
             this.length2.TabIndex = 8;
@@ -123,20 +123,21 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(516, 254);
+            this.label5.Location = new System.Drawing.Point(500, 258);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 15);
+            this.label5.Size = new System.Drawing.Size(75, 15);
             this.label5.TabIndex = 9;
-            this.label5.Text = "颜色:";
+            this.label5.Text = "单击颜色:";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(602, 26);
+            this.button2.Location = new System.Drawing.Point(611, 28);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 30);
             this.button2.TabIndex = 11;
-            this.button2.Text = "随机";
+            this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // listBox1
             // 
@@ -148,7 +149,7 @@
             "Yellow",
             "Red",
             "Green"});
-            this.listBox1.Location = new System.Drawing.Point(567, 254);
+            this.listBox1.Location = new System.Drawing.Point(593, 258);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(100, 19);
             this.listBox1.TabIndex = 12;
@@ -179,18 +180,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox angle1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox angle2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox length1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox length2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox angle1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox angle2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox length1;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox length2;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.ListBox listBox1;
     }
 }
 
