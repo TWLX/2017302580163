@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ordertest", "ordertest\orde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawTrees", "DrawTrees\DrawTrees.csproj", "{B7B999A7-4E77-4AA6-9BDD-E4B8507F9A2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ordertestTests", "ordertestTests\ordertestTests.csproj", "{86058AA3-FD6F-4BAE-9522-A2A0DCAF3ABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B7B999A7-4E77-4AA6-9BDD-E4B8507F9A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B999A7-4E77-4AA6-9BDD-E4B8507F9A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B999A7-4E77-4AA6-9BDD-E4B8507F9A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86058AA3-FD6F-4BAE-9522-A2A0DCAF3ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86058AA3-FD6F-4BAE-9522-A2A0DCAF3ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86058AA3-FD6F-4BAE-9522-A2A0DCAF3ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86058AA3-FD6F-4BAE-9522-A2A0DCAF3ABF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ordertest {
-    class Goods {
+    public class Goods {
 
-        private double price;
+        public double price;
         public uint Id { get; set; }
         public string Name { get; set; }
+
+        public Goods() { }
 
         public Goods(uint id, string name, double value) {
             Id = id;

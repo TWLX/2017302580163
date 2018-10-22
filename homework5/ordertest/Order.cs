@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace ordertest {
 
-    class Order {
+    public class Order {
         public uint Id { get; set; }
         public Customer Customer { get; set; }
-        private List<OrderDetail> details=new List<OrderDetail>();
+        public List<OrderDetail> details=new List<OrderDetail>();
+
+        //无参构造函数
+        public Order() { }
 
         public Order(uint orderId, Customer customer) {
             Id = orderId;

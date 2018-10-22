@@ -10,15 +10,15 @@ namespace ordertest {
         public static void Main() {
             try {
                 Customer customer1 = new Customer(1, "宝多六花");
-                Customer customer2 = new Customer(2, "西条茜");
+                Customer customer2 = new Customer(2, "新条茜");
 
                 Goods milk = new Goods(1, "牛奶", 69.9);
                 Goods eggs = new Goods(2, "鸡蛋", 4.99);
                 Goods apple = new Goods(3, "苹果", 5.59);
 
-                OrderDetail orderDetails1 = new OrderDetail(1, apple, 8);
+                OrderDetail orderDetails1 = new OrderDetail(1, milk, 8);
                 OrderDetail orderDetails2 = new OrderDetail(2, eggs, 2333);
-                OrderDetail orderDetails3 = new OrderDetail(3, milk, 1);
+                OrderDetail orderDetails3 = new OrderDetail(3, apple, 1);
 
                 Order order1 = new Order(1, customer1);
                 Order order2 = new Order(2, customer2);
@@ -66,6 +66,11 @@ namespace ordertest {
                 os.RemoveOrder(2);
                 os.QueryAllOrders().ForEach(
                     od => Console.WriteLine(od));
+
+                Console.WriteLine();
+                os.Export(orders);
+                os.Import("serialiable.xml");
+
 
             } catch (Exception e) {
                 Console.WriteLine(e.Message);

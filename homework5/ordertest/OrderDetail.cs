@@ -5,9 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ordertest {
-    class OrderDetail {
+    public class OrderDetail {
         public uint Id { get; set; }
         public Goods Goods { get; set; }
+
+        public OrderDetail() { }
+
         public OrderDetail(uint id, Goods goods, uint quantity) {
             this.Id = id;
             this.Goods = goods;
