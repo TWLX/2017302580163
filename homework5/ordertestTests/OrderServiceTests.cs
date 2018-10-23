@@ -61,31 +61,25 @@ namespace ordertest.Tests
             Assert.IsTrue(true);
         }
 
-        [TestMethod()]
-        public void UpdateCustomerTest()
-        {
-            Assert.IsTrue(true);
-        }
 
         [TestMethod()]
         public void ExportTest()
         {
-            //Customer customer1 = new Customer(1, "宝多六花");
-            //Goods milk = new Goods(1, "牛奶", 69.9);
-            //OrderDetail orderDetails1 = new OrderDetail(1, milk, 8);
-            //Order order1 = new Order(1, customer1);
-            //order1.AddDetails(orderDetails1);
-            //List<Order> o = new List<Order> {order1};
-            //OrderService os = new OrderService();
-            //os.Export(o);
-            FileStream fsExpected = new FileStream("serialiable.xml", FileMode.Create);
-            Assert.IsNotNull(fsExpected);
+            Customer customer1 = new Customer(1, "宝多六花");
+            Goods milk = new Goods(1, "牛奶", 69.9);
+            OrderDetail orderDetails1 = new OrderDetail(1, milk, 8);
+            Order order1 = new Order(1, customer1);
+            order1.AddDetails(orderDetails1);
+            List<Order> o = new List<Order> { order1 };
+            OrderService os = new OrderService();
+            Assert.IsTrue(os.Export(o));
         }
 
         [TestMethod()]
         public void ImportTest()
         {
-            Assert.IsTrue(true);
+            OrderService os = new OrderService();
+            Assert.IsTrue(os.Import("serialiable.xml"));
         }
     
     }

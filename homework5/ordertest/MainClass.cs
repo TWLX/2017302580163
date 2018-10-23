@@ -68,8 +68,8 @@ namespace ordertest {
                     od => Console.WriteLine(od));
 
                 Console.WriteLine();
-                os.Export(orders);
-                os.Import("serialiable.xml");
+                bool b1 = os.Export(orders);
+                bool b2 = os.Import("serialiable.xml");
 
 
             } catch (Exception e) {

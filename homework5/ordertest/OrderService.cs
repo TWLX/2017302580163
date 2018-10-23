@@ -56,15 +56,16 @@ namespace ordertest {
         //    return query.ToList();
         //}
     
-        public void UpdateCustomer(uint orderId, Customer newCustomer) {
-            if (orderDict.ContainsKey(orderId)) {
-                orderDict[orderId].Customer = newCustomer;
-            } else {
-                throw new Exception($"订单-{orderId}不存在!");
-            }
-        }
+        //public bool UpdateCustomer(uint orderId, Customer newCustomer) {
+        //    if (orderDict.ContainsKey(orderId)) {
+        //        orderDict[orderId].Customer = newCustomer;
+        //    } else {
+        //        throw new Exception($"订单-{orderId}不存在!");
+        //    }
+        //    return true;
+        //}
 
-        public void Export(List<Order> o){
+        public bool Export(List<Order> o){
             {//XmlTextWriter writer;
              //writer = new XmlTextWriter(filename, null);
              ////使用缩进
@@ -116,20 +117,24 @@ namespace ordertest {
                 Console.WriteLine(ex.Message);
             }
 
+            
             Console.WriteLine("序列化成功！");
             Console.WriteLine();
-
+            return true;
         }
 
-        public void Import(string file)
+        public bool Import(string file)
         {
             //反序列化
             try
             {
                 FileStream fs = new FileStream(file, FileMode.Open, FileAccess.Read);
-                XmlSerializer xs = new XmlSerializer(typeof(Order));
+                XmlSerializer xs = new XmlSerializer(typeof(List<Order>));
                 List<Order> p = (List<Order>)xs.Deserialize(fs);
-                Console.WriteLine(p);
+                foreach(Order o in p)
+                {
+                    Console.WriteLine(o);
+                }
                 
             }
             catch (Exception e)
@@ -138,7 +143,7 @@ namespace ordertest {
             }
 
             Console.WriteLine("反序列化成功");
-
+            return true;
         }
     }
 }
