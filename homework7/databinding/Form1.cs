@@ -32,9 +32,37 @@ namespace databinding
 
         private void button1_Click(object sender, EventArgs e)
         {
-            orderBindingSource.DataSource = 
-                os.Orders.Where(s => s.Name == KeyWord);
+            switch (comboBox1.Text)
+            {
+                case "Name":
+                    orderBindingSource.DataSource = os.Orders.Where(s => s.Name == KeyWord);
+                    break;
+                case "Good":
+                    orderBindingSource.DataSource = os.Orders.Where(s => s.Good == KeyWord);
+                    break;
+                case "ID":
+                    int n = Convert.ToInt16(KeyWord);
+                    orderBindingSource.DataSource = os.Orders.Where(s => s.ID == n);
+                    break;
+                case "Num":
+                    int m = Convert.ToInt16(KeyWord);
+                    orderBindingSource.DataSource = os.Orders.Where(s => s.Num == m);
+                    break;
+
+
+            }
+
+
+
+
+            
+
+
+
+            
         }
+    
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -64,5 +92,6 @@ namespace databinding
         {
 
         }
+
     }
 }
