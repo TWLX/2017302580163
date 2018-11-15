@@ -59,7 +59,7 @@ namespace databinding
                 Console.WriteLine(e.Message);
             }
 
-            Console.WriteLine("反序列化成功");
+            Console.WriteLine("反序列化成功！");
         }
     }
 }

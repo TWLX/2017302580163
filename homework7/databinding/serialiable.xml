@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <Name>ymd001</Name>
+    <ID>1</ID>
+    <Num>20</Num>
+    <Good>轰炸机</Good>
+  </Order>
+  <Order>
+    <Name />
+    <ID>2</ID>
+    <Num>19</Num>
+    <Good>鱼雷机</Good>
+  </Order>
+  <Order>
+    <Name>4396</Name>
+    <ID>3</ID>
+    <Num>19</Num>
+    <Good>防空炮</Good>
+  </Order>
+</ArrayOfOrder>
