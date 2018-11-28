@@ -32,11 +32,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Num = new System.Windows.Forms.TextBox();
-            this.Id = new System.Windows.Forms.TextBox();
             this.Good = new System.Windows.Forms.TextBox();
             this.Name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -50,11 +48,9 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Num);
-            this.panel1.Controls.Add(this.Id);
             this.panel1.Controls.Add(this.Good);
             this.panel1.Controls.Add(this.Name);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -85,17 +81,10 @@
             // 
             // Num
             // 
-            this.Num.Location = new System.Drawing.Point(64, 136);
+            this.Num.Location = new System.Drawing.Point(64, 108);
             this.Num.Name = "Num";
             this.Num.Size = new System.Drawing.Size(100, 25);
             this.Num.TabIndex = 7;
-            // 
-            // Id
-            // 
-            this.Id.Location = new System.Drawing.Point(64, 99);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(100, 25);
-            this.Id.TabIndex = 6;
             // 
             // Good
             // 
@@ -115,21 +104,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(11, 139);
+            this.label4.Location = new System.Drawing.Point(11, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 3;
             this.label4.Text = "Num:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(11, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Id:";
             // 
             // label2
             // 
@@ -162,7 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 328);
             this.Controls.Add(this.panel1);
-            //this.Name = "add";
+       //     this.Name = "add";
             this.Text = "Add";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -173,12 +152,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox Num;
-        private System.Windows.Forms.TextBox Id;
         private System.Windows.Forms.TextBox Good;
         private System.Windows.Forms.TextBox Name;
         private System.Windows.Forms.Label label4;

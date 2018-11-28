@@ -9,7 +9,7 @@ namespace databinding
     public class Order
     {
         public string Name { get; set; }
-        public int ID { get; set; }
+        public string ID { get; set; }
         public int Num { get; set; }
         public string Good { get; set; }
 
@@ -17,10 +17,10 @@ namespace databinding
         public Order() { }
 
 
-        public Order(string name, int id, int num,string good)
+        public Order(string name, string id, int num,string good)
         {
             Name = name;
-            ID = id;
+            ID = Guid.NewGuid().ToString();
             Num = num;
             Good = good;
         }

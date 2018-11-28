@@ -42,6 +42,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@
             this.numDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.goodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
@@ -92,10 +92,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "所有订单",
             "Name",
-            "Good",
-            "ID",
-            "Num"});
+            "Good"});
             this.comboBox1.Location = new System.Drawing.Point(76, 19);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(64, 23);
@@ -206,6 +205,16 @@
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(391, 17);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(94, 38);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "查重";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -303,16 +312,6 @@
             this.goodDataGridViewTextBoxColumn.DataPropertyName = "Good";
             this.goodDataGridViewTextBoxColumn.HeaderText = "Good";
             this.goodDataGridViewTextBoxColumn.Name = "goodDataGridViewTextBoxColumn";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(391, 17);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(94, 38);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "查重";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form1
             // 

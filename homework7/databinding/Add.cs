@@ -12,6 +12,8 @@ namespace databinding
 {
     public partial class add : Form
     {
+        OrderService orderService = new OrderService();
+
         public add()
         {
             InitializeComponent();
@@ -20,13 +22,19 @@ namespace databinding
         private void button1_Click(object sender, EventArgs e)
         {
             String name = Name.Text;
-            int id = Convert.ToInt16(Id.Text);
+     
             int num = Convert.ToInt16(Num.Text);
             String good = Good.Text;
-            Form1.form1.orderBindingSource.Add(new Order(name, id, num, good));
-            Form1.form1.orderBindingSource.EndEdit();
-            //bool b1 = os.Export(orders);
-            //bool b2 = os.Import("serialiable.xml");
+
+            Order order = new Order(name, "wsng", num, good);
+            orderService.Add(order);
+
+            Form1.form1.orderBindingSource.DataSource = orderService.GetAllOrders();
+            //Form1.form1.orderBindingSource.Add(new Order(name, id, num, good));
+            //Form1.form1.orderBindingSource.EndEdit();
+
+            this.Close();
+
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
