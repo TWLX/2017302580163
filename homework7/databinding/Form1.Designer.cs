@@ -38,7 +38,6 @@
             this.queryInput = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.lblEcho = new System.Windows.Forms.Label();
-            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -49,18 +48,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.goodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -102,7 +102,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(542, 14);
+            this.button4.Location = new System.Drawing.Point(617, 10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 38);
             this.button4.TabIndex = 3;
@@ -112,7 +112,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(434, 17);
+            this.button3.Location = new System.Drawing.Point(509, 14);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 33);
             this.button3.TabIndex = 2;
@@ -122,11 +122,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(372, 14);
+            this.button2.Location = new System.Drawing.Point(381, 11);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 37);
+            this.button2.Size = new System.Drawing.Size(113, 37);
             this.button2.TabIndex = 1;
-            this.button2.Text = "增添";
+            this.button2.Text = "增添与修改";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -159,13 +159,6 @@
             this.lblEcho.Size = new System.Drawing.Size(37, 15);
             this.lblEcho.TabIndex = 2;
             this.lblEcho.Text = "（）";
-            // 
-            // orderBindingSource
-            // 
-            this.orderBindingSource.AllowNew = true;
-            this.orderBindingSource.DataSource = typeof(databinding.Order);
-            this.orderBindingSource.Sort = "";
-            this.orderBindingSource.CurrentChanged += new System.EventHandler(this.orderBindingSource_CurrentChanged);
             // 
             // panel2
             // 
@@ -313,6 +306,13 @@
             this.goodDataGridViewTextBoxColumn.HeaderText = "Good";
             this.goodDataGridViewTextBoxColumn.Name = "goodDataGridViewTextBoxColumn";
             // 
+            // orderBindingSource
+            // 
+            this.orderBindingSource.AllowNew = true;
+            this.orderBindingSource.DataSource = typeof(databinding.Order);
+            this.orderBindingSource.Sort = "";
+            this.orderBindingSource.CurrentChanged += new System.EventHandler(this.orderBindingSource_CurrentChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -327,7 +327,6 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -336,6 +335,7 @@
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

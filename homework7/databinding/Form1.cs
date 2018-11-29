@@ -133,7 +133,7 @@ namespace databinding
             label4.Text = fId;
         }
 
-        private void queryOrder()
+        public void queryOrder()
         {
             switch (comboBox1.SelectedIndex)
             {
@@ -181,6 +181,20 @@ namespace databinding
             else
             {
                 button6.Text = repeat;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (orderBindingSource.Current != null)
+            {
+                add add = new add();
+                add.ShowDialog();
+                queryOrder();
+            }
+            else
+            {
+                MessageBox.Show("No Order is selected!");
             }
         }
     }

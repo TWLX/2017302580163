@@ -19,10 +19,10 @@ namespace databinding
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void edit()
         {
             String name = Name.Text;
-     
+
             int num = Convert.ToInt16(Num.Text);
             String good = Good.Text;
 
@@ -31,10 +31,14 @@ namespace databinding
 
             Form1.form1.orderBindingSource.DataSource = orderService.GetAllOrders();
             //Form1.form1.orderBindingSource.Add(new Order(name, id, num, good));
-            //Form1.form1.orderBindingSource.EndEdit();
-
+            //Form1.form1.orderBindingSource.EndEdit(); 
             this.Close();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            edit();
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -52,6 +56,27 @@ namespace databinding
             {
                 string name = openFileDialog1.FileName;
             }
+        }
+
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (Form1.form1.orderBindingSource.Current != null)
+            {
+                Order order = (Order)Form1.form1.orderBindingSource.Current;
+                orderService.Delete(order.ID);
+                Form1.form1.queryOrder();
+            }
+            else
+            {
+                MessageBox.Show("No Order is selected!");
+            }
+            edit();
         }
     }
 }
