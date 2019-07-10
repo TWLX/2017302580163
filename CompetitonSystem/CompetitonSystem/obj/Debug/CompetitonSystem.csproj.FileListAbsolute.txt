@@ -1,0 +1,17 @@
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\bin\Debug\CompetitonSystem.exe
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\bin\Debug\CompetitonSystem.pdb
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.csprojAssemblyReference.cache
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.Properties.Resources.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.csproj.GenerateResource.cache
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.csproj.CoreCompileInputs.cache
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.exe
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.pdb
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.Tournament_schedule.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\bin\Debug\CompetitonSystem.exe.config
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.Login.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.TeamInfo.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.athleteDetail.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.athleteInfo.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.coach.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.Doctor.resources
+G:\Git\Twilight的git\CompetitonSystem\CompetitonSystem\obj\Debug\CompetitonSystem.sportTable.resources
